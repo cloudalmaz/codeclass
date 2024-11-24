@@ -1,0 +1,355 @@
+
+hr,
+center {
+    display: none;
+}
+
+body {
+    font: 16px/18px Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+.ie-arrow,
+.ie-img {
+    display: none;
+}
+
+div.logo {
+    width: 100%;
+    height: 140px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.heading {
+    background-color: #ECECEC;
+}
+
+.logo img {
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 95px;
+    text-align: center;
+    color: #5E5D5D;
+    font-weight: lighter;
+    font-size: 40px;
+    letter-spacing: 0.03em;
+}
+
+h2 {
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+}
+
+h6 {
+    text-align: center;
+    color: #B3B3B3;
+    letter-spacing: 0.02em;
+    font-size: 24px;
+    font-weight: lighter;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.row {
+    clear: both;
+    margin: 0 auto;
+    padding: 70px 0;
+    max-width: 1000px;
+}
+
+.col {
+    float: left;
+    position: relative;
+}
+
+.col.one-third {
+    width: 33.3%;
+}
+
+.col.one-half {
+    width: 50%;
+}
+
+.icon {
+    width: 8em;
+    height: 6.25em;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icon-icon {
+    font-size: 6.25em;
+    color: #8C8C8C;
+}
+
+.status-icon {
+    font-size: 2.1em;
+    position: absolute;
+    right: -0.15em;
+    bottom: -0.2em;
+}
+
+.icon.cloud .icon-icon {
+    font-size: 8em;
+    position: relative;
+    top: -0.07em;
+}
+
+.icon.cloud .status-icon {
+    right: -0.75em;
+}
+
+.icon.server .icon-icon {
+    font-size: 6em;
+    position: relative;
+    top: 0.1em;
+}
+
+.icon.server .status-icon {
+    right: -0.35em;
+}
+
+.col i.status-icon.cloa-ok:before {
+    color: #00C9AA;
+}
+
+.col i.status-icon.cloa-error:before {
+    color: #D04A34;
+}
+
+.arrows {
+    position: absolute;
+    right: -36px;
+    top: 45px;
+}
+
+.arrows.arrows-left {
+    right: -26px;
+}
+
+.arrows>i {
+    font-size: 30px;
+    color: #D0D0D0;
+}
+
+.arrows .cloa-arrow-bold-right {
+    margin-left: -10px;
+}
+
+.error-info {
+    text-align: center;
+}
+
+.error-info .what {
+    color: #8C8C8C;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    display: block;
+}
+
+.error-info .status {
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    display: block;
+    margin-top: 3px;
+}
+
+.error-info .status-error {
+    color: #D04A34;
+}
+
+.error-info .status-working {
+    color: #00C9AA;
+}
+
+.error-info .logo-cloud {
+    color: #0a659d;
+}
+
+.error-desc {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.error-desc-text {
+    font-size: 13px;
+    color: #666;
+    letter-spacing: 0.02em;
+    margin-left: 40px;
+}
+
+.col:first-child .error-desc-text {
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+@media (max-width: 1019px) {
+    .row {
+        width: 100%;
+    }
+}
+
+@media (max-width: 899px) {
+    .error-desc {
+        width: auto;
+    }
+}
+
+@media (max-width: 787px) {
+    .icon {
+        font-size: 10px;
+    }
+
+    .arrows {
+        top: 28px;
+        right: -26px;
+    }
+
+    .arrows.arrows-left {
+        right: -16px;
+    }
+
+    .arrows>i {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding-top: 80px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 17px;
+    }
+
+    .row {
+        padding: 40px 0;
+    }
+
+    div.logo img {
+        width: 120px;
+    }
+
+    div.logo {
+        height: 120px;
+    }
+
+    .error-desc-text {
+        font-size: 12px;
+    }
+
+    .error-info .what,
+    .error-info .status {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 599px) {
+    .error-desc .col {
+        float: none;
+        width: auto;
+    }
+
+    .col:first-child .error-desc-text,
+    .error-desc-text {
+        margin: 0 0 40px 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 379px) {
+    .row .col {
+        width: auto;
+        float: none;
+    }
+
+    .heading .col {
+        margin-bottom: 40px;
+    }
+
+    .heading .col:last-child {
+        margin-bottom: 0;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    div.logo img {
+        width: 100px;
+    }
+
+    div.logo {
+        height: 109px;
+    }
+
+    .col:last-child .error-desc-text {
+        margin-bottom: 0;
+    }
+}
+
+
+@font-face {
+    font-family: 'cloacloud';
+    src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+i {
+    font-family: 'cloacloud';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.cloa-error:before {
+    content: "\e601";
+}
+
+.cloa-ok:before {
+    content: "\e602";
+}
+
+.cloa-arrow-bold-left:before {
+    content: "\e603";
+}
+
+.cloa-arrow-bold-right:before {
+    content: "\e604";
+}
+
+.cloa-imac:before {
+    content: "\e605";
+}
+
+.cloa-server:before {
+    content: "\e606";
+}
+
+.cloa-cloud:before {
+    content: "\e607";
+}
